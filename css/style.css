@@ -1,0 +1,133 @@
+body{
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+
+.hidden{
+    display: none;
+}
+
+img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#login-form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+#login-form input {
+    border:none;   
+    background-color: transparent;
+    text-align: center;
+    font-size: 40px;
+    padding-right: 10px;
+    border-bottom: solid 3px white;
+}
+
+#login-form input:focus{
+    outline: none;
+    color:white;
+}
+
+@keyframes fadeIn{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        transform:none;
+        opacity: 1;
+    }
+}
+
+#greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:fadeIn 1s linear;
+    font-size: 40px;
+    margin: 250px 0 50px 0;
+    padding : 0px;
+}
+
+
+#login-form input::placeholder{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+#login-form button{
+    cursor: pointer;
+    background-color: (0,0,0,0.1);
+    margin:50px;
+    font-size: 30px;
+    border:none;
+    border-radius: 10px;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#todo-form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-form input{
+    border:none;   
+    background-color: transparent;
+    font-size: 40px;
+    padding-right: 10px;
+    color: white;
+    text-align: center;
+    border-bottom: solid 3px white;
+}
+
+#todo-form input::placeholder{
+    text-align: center;
+    color: white;
+}
+
+#todo-form input:focus{
+    outline: none;
+}
+
+#quote{
+    font-size: 20px;
+    position: absolute;
+    top:95%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#todo-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#todo-list li{
+    margin: 5px;
+    font-size: 25px;
+}
+
+#todo-list li button{
+    margin-left: 10px;
+}
